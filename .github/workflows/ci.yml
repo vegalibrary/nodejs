@@ -25,6 +25,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
           folder: build # Replace with your output directory
-          commit_message: "Deploy from ${{ github.sha }}"
+          commit_message: "Deploy from CI/CD"
